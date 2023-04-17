@@ -1,3 +1,8 @@
+# References
+[Linear congruential generator](https://en.wikipedia.org/wiki/Linear_congruential_generator)    
+[Middle-square method](https://en.wikipedia.org/wiki/Middle-square_method#:~:text=period%20and%20randomness.-,The%20method,zeroes%20are%20added%20to%20compensate.)   
+[Mersenne Twister](https://en.wikipedia.org/wiki/Mersenne_Twister)   
+
 # A brief restatement of the problem
 This project utilizes the high-level programming language Python to create a random number generator from scratch, without relying on any existing libraries. The aim is to implement the Pseudo Random Number Generator (PRNG) algorithms, and test out their effectiveness.
 
@@ -68,17 +73,17 @@ Each pixel stands for 3 consecutive random generated numbers; a 400 by 400 image
 480,000 of them should be sufficient to test the PRNG.
 The images below are magnified, zoomed in so that the pixels are clear on a printed paper
 ## A.Using Middle Square Method:
-**Image 1** (very zoomed in): the PRNG generates few random numbers and then it start to generate the same values using seed value 999
+> **Image 1** (very zoomed in): the PRNG generates few random numbers and then it start to generate the same values using seed value 999
 ![image 1-2.png](https://github.com/LinyunLiu/RandomNumberGenerator/blob/main/image_examples/image%201-2.png?raw=true)   
 
-**Image 2** (enlarged): the PRNG generates a ton of random numbers and then it start to repeat the same sequence using seed value 255
+> **Image 2** (enlarged): the PRNG generates a ton of random numbers and then it start to repeat the same sequence using seed value 255
 ![image 1-1.png](https://github.com/LinyunLiu/RandomNumberGenerator/blob/main/image_examples/image%201-1.png?raw=true)
 *After testing with many other seeds, middle square method appears to be quite inefficient, it is unstable and unreliable, 
 the randomness is largely based on finding the good seed, and it seems there are no seed that will make sure the numbers don’t repeat*    
 
 
 ## B.Using Linear Congruential PRNG
-**Image 3** (very roomed in): the PRNG generates tons of random numbers, and it appears that there is no significant repetition
+> **Image 3** (very roomed in): the PRNG generates tons of random numbers, and it appears that there is no significant repetition
 `Seed: 12345`
 `Multiplier: 75`
 `Increment:74`
@@ -86,7 +91,7 @@ the randomness is largely based on finding the good seed, and it seems there are
 Used by ZX81, a home computer in 1981
 ![image 2-1.png](https://github.com/LinyunLiu/RandomNumberGenerator/blob/main/image_examples/image%202-1.png?raw=true)    
 
-**Image 4** (zoomed in a little bit): the PRNG generates a lot of random numbers, and then it starts to repeat itself, 
+> **Image 4** (zoomed in a little bit): the PRNG generates a lot of random numbers, and then it starts to repeat itself, 
 but it lasts longer than middle square method
 `Seed: 12345`
 `Multiplier: 22695477`
@@ -101,7 +106,7 @@ Some of the combination of these parameters seems always produce patterned rando
 
 ## C.Using Mersenne Twister:
 It is said that the Mersenne Twister PRNG is one of the most reliable random number generators  
-**Image 5** (very roomed in): the PRNG generates  tons of random numbers, and it appears that there is no significant repetition
+> **Image 5** (very roomed in): the PRNG generates  tons of random numbers, and it appears that there is no significant repetition
 `Seed: 12345`
 ![image 3-1.png](https://github.com/LinyunLiu/RandomNumberGenerator/blob/main/image_examples/image%203-1.png?raw=true)
 *After testing with many different seeds, it seems that the Mersenne Twister algorithm is unbreakable, however, if the images is 5000 x 5000, 
