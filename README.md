@@ -21,8 +21,7 @@ In this example, the RNGMiddleSquare require a seed input (255) as argument, and
 **Sample Output:**
 ```
 44 23 1 55 35 83 35 41 100 0 
-26 85 72 37 30 54 26 41 6 28 <img width="500" alt="image" src="https://user-images.githubusercontent.com/90886678/232553617-9a776234-4d3f-4773-b6bb-a190c4c55f1b.png">
-
+26 85 72 37 30 54 26 41 6 28
 58 95 86 98 2 90 36 22 50 26 
 14 87 95 28 58 95 86 98 2 90 
 36 22 50 26 14 87 95 28 58 95 
