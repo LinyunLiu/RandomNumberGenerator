@@ -39,7 +39,7 @@ A. Middle Square Method:
 * Initialize a seed value: Choose an integer number as the seed value for the random number generator. This value will be used to start the middle square method algorithm.
 * Square the seed value: Multiply the seed value by itself to get a new number with (most likely) twice as many digits.
 * Extract the middle digits: Take the middle digits of the squared value. If the squared value will have an even number of digits remained after the middle digits are extracted, take the middle digits in the middle. If it has an odd number of digits, then we add zero(s) before the digits before extracting.
-4.Update the seed: Use the middle digits as the next random number in the sequence. Store this value and repeat steps 2-4 to generate more random numbers.
+* Update the seed: Use the middle digits as the next random number in the sequence. Store this value and repeat steps 2-4 to generate more random numbers.
 
 B. Linear Congruential
 * Initialize a seed value: Choose a positive integer as the seed value for the random number generator. This value will be used to start the linear congruential method algorithm.
