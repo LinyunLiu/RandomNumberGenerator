@@ -1,7 +1,4 @@
 /*Name: Linyun Liu
-Student Number: 613705
-CMPT 360 Spring 2023
-Lab Assignment #7
 Title: Explore Random Number Generator in Rust
  */
 fn main() {
